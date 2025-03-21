@@ -1,216 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
-  <title>¡Con NOMED la educación nunca se detiene!</title>
-  <link rel="icon" type="image/x-icon" href="https://app.nomed.org/nomed/nomed-logo-only.png">
-    <link rel="preload" as="style" href="https://app.nomed.org/build/assets/app-D8LenHUV.css" /><link rel="stylesheet" href="https://app.nomed.org/build/assets/app-D8LenHUV.css" />
-  <style>
-    body {
-      font-family: 'Nunito', sans-serif;
-      background: #f3f4f6;
-    }
-    @font-face {
-      font-family: 'Bauhaus93';
-      src: url("https://app.nomed.org/assets/fonts/Bauhaus93/Bauhaus93.eot");
-      src: local('☺'),
-          url("https://app.nomed.org/assets/fonts/Bauhaus93/Bauhaus93.woff") format('woff'),
-          url("https://app.nomed.org/assets/fonts/Bauhaus93/Bauhaus93.ttf") format('truetype'),
-          url("https://app.nomed.org/assets/fonts/Bauhaus93/Bauhaus93.svg") format('svg');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    .nomed-font{
-      font-family:'Bauhaus93',Sans-Serif !important;
-    }
-  </style>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TW3SX5BD1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-6TW3SX5BD1');
-  </script>
-  
-  <style>
-  @keyframes shine {
-    0% { background-position: -200px; }
-    100% { background-position: 200px; }
-  }
-
-  .animate-shine {
-    background-size: 200% auto;
-    animation: shine 5s linear infinite;
-  }
-</style>
-
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app" class="bg-gray-100 text-gray-900">
-    <div class="min-h-full">
-  <nav class="bg-nomed-primary-dark shadow-md">
-  <div class="navbar mx-auto max-w-7xl flex justify-between items-center px-4">
-    <div class="flex items-center space-x-4">
-      <a href="https://app.nomed.org/webapp/home" class="flex items-center normal-case text-xl">
-        <img class="w-10 h-10 mr-2" src="https://app.nomed.org/nomed/logo-animate.gif" alt="NOMED">
-        <div class="text-3xl font-bold nomed-font text-white">Nomed</div>
-      </a>
-    </div>
-    <div class="flex items-center space-x-4">
-            <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-ghost btn-circle avatar border-nomed-warning-dark">
-          <div class="w-10 rounded-full">
-            <img src="https://app.nomed.org/nomed/profile.png" />
-          </div>
-        </label>
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow-lg bg-base-100 rounded-box w-52 z-50">
-          <h2 class="menu-title text-black">Hola Ignacio Alexis</h2>
-          <li><a href="https://app.nomed.org/webapp/home">Nomed</a></li>
-                      <li><a href="https://app.nomed.org/admin">Admin</a></li>
-                    
-          <li><a href="https://app.nomed.org/webapp/user">Mi Perfil</a></li>
-          <li><a href="https://app.nomed.org/webapp/cert">Mis Certificados</a></li>
-          
-          <div class="divider"></div>
-          <li>
-            <form action="https://app.nomed.org/logout" method="POST">
-              <input type="hidden" name="_token" value="JCF17PFSW3TVzCPyIfOOvPfNprGnY3jk08E3G1Ig" autocomplete="off">              <button type="submit" class="text-nomed-danger-dark font-bold">Cerrar Sesión</button>
-            </form>
-          </li>
-        </ul>
-      </div>
-          </div>
-  </div>
-</nav>
-
-  
-    
-      
-    
-  
-  <main>
-    
-    <div class="container mx-auto px-6 py-8">
-      <div class="bg-gray-100">
-  <div class="container mx-auto py-2">
-    <div class="grid grid-cols-4 sm:grid-cols-12 gap-6 px-4">
-      <div class="col-span-4 sm:col-span-3">
-        <div class="bg-white shadow rounded-lg p-6">
-          <div class="flex flex-col items-center">
-            <img src="https://app.nomed.org/nomed/profile.png" class="w-32 h-32 bg-gray-300 rounded-full mb-4 shrink-0">
-            </img>
-            <h2 class="text-lg font-bold mb-2">Ignacio Alexis Andrade Lopez</h2>
-
-
-            <div class="flex space-x-4">
-              <span class="relative inline-block bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-sm overflow-hidden shadow-lg animate-shine">
-                Diamond
-              </span>
-              <span class="relative inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-white text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-sm overflow-hidden shadow-lg animate-shine">
-                Gold
-              </span>
-              <span class="relative inline-block bg-gradient-to-r from-green-400 to-green-600 text-white text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-sm overflow-hidden shadow-lg animate-shine">
-                Emerald
-              </span>
-            </div>
-
-            <div class="flex space-x-4">
-              <span class="relative inline-block bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-lg overflow-hidden shadow-xl animate-shine">
-                Diamond
-              </span>
-              <span class="relative inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-white text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-lg overflow-hidden shadow-xl animate-shine">
-                Gold
-              </span>
-              <span class="relative inline-block bg-gradient-to-r from-green-400 to-green-600 text-white text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-lg overflow-hidden shadow-xl animate-shine">
-                Emerald
-              </span>
-            </div>
-
-            <div class="flex space-x-4">
-              <span class="relative inline-block bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-sm overflow-hidden shadow-md animate-shine">
-                Premium
-              </span>
-              <span class="relative inline-block bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-sm overflow-hidden shadow-md animate-shine">
-                Pro
-              </span>
-              <span class="relative inline-block bg-gradient-to-r from-green-400 to-green-600 text-transparent bg-clip-text text-xs font-bold me-2 mb-3 px-2.5 py-0.5 rounded-sm overflow-hidden shadow-md animate-shine">
-                Basic
-              </span>
-            </div>
-
-            <div class="flex items-center gap-2">
-                              <img src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CL.svg" width="36" class="img rounded-md" alt="">
-                <small class="text-gray-700">,  Chile  </small>
-                          </div>
-            
-            <div class="mt-6 flex flex-wrap gap-4 justify-center items-center">
-                                          
-                                                                    </div>
-          </div>
-          
+    <button id="openModal">Abrir Modal</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2><strong>Instructivo compartir certificado</strong></h2>
+            <p><strong>1) Click en foto de perfil</strong></p>
+            <img src="images/1.png">
+            <p><strong>2) Ir a mis certificados</strong></p>
+            <img src="images/2.png">
+            <p><strong>3) Aquí puedes ver todos tus certificados!</strong></p>
+            <img src="images/3.png">
+            <p><strong>4) Click en "ver certificado"</strong></p>
+            <img src="images/4.png">
+            <p><strong>5) Click en "Compartir en LinkedIn"</strong></p>
+            <img src="images/5.png">
+            <p><strong>6) Hacer una publicación</strong></p>
+            <img src="images/6.png">
+            <h2><strong>Agregar certificado a LinkedIn</strong></h2>
+            <p><strong>1) Ir a mi perfil en LinkedIn</strong></p>
+            <p><strong>2) Agregar licencias y certificaciones</strong></p>
+            <img src="images/7.png">
+            <p><strong>3) Rellenar el siguiente formulario:</strong></p>
+            <img src="images/8.png">
+            <p><strong>4) ID credencial = números en link de página nomed</strong></p>
+            <img src="images/9.png">
+            <p><strong>5) URL credencial = Link completo</strong></p>
+            <img src="images/10.png">
+            <p><strong>6) Click en "Guardar"</strong></p>
+            <h2><strong>¡Y ahí tendrías tu certificado en LinkedIn!</strong></h2>
         </div>
-      </div>
-      <div class="col-span-4 sm:col-span-9">
-        <div class="bg-white shadow rounded-lg p-6">
-          <p class="text-nomed-primary-dark uppercase"><strong>MIS CERTIFICADOS</strong></p>
-          <div class="container mx-auto flex flex-wrap">
-                                        <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white shadow-lg hover:bg-slate-100 p-6 cursor-pointer">
-                  <small class="text-nomed-primary-dark uppercase"><strong>Fundamentos prácticos de IA para la enseñanza escolar</strong></small>
-                  <div class="flex items center justify-center">
-                    <div class="mb-3">
-                      <img src="https://app.nomed.org/storage/certs/img/J0YF3Q7SmhesrhZEUCrFrUxIXrFMuZreQISexSSH.jpg" width="200" class="" alt="nomed Logo" />
-                    </div>
-                  </div>
-                  <div class="flex items center justify-center">
-                    <a href="https://app.nomed.org/cert/c429e057-f1cf-406b-b763-58c65faf9ead" class="btn btn-xs bg-nomed-primary hover:bg-nomed-primary-dark text-white" rel="noopener noreferrer">VER CERTIFICADO</a>
-                  </div>
-                </div>
-              </div>
-                                        <div class="w-full md:w-1/3 p-4">
-                <div class="bg-white shadow-lg hover:bg-slate-100 p-6 cursor-pointer">
-                  <small class="text-nomed-primary-dark uppercase"><strong>Certificado de voluntariado</strong></small>
-                  <div class="flex items center justify-center">
-                    <div class="mb-3">
-                      <img src="https://app.nomed.org/storage/certs/img/w5A3AzfixMLidn0VgZHYGv5bs1XYxMYcMsQ08q10.jpg" width="200" class="" alt="nomed Logo" />
-                    </div>
-                  </div>
-                  <div class="flex items center justify-center">
-                    <a href="https://app.nomed.org/cert/68383f14-829a-42a8-b94a-b62dd540d386" class="btn btn-xs bg-nomed-primary hover:bg-nomed-primary-dark text-white" rel="noopener noreferrer">VER CERTIFICADO</a>
-                  </div>
-                </div>
-              </div>
-                      </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-    </div>
-    
-  </main>
-</div>
-  </div>
-    <link rel="preload" as="style" href="https://app.nomed.org/build/assets/app-BWX4fas7.css" /><link rel="modulepreload" href="https://app.nomed.org/build/assets/app-C8fbWGuR.js" /><link rel="stylesheet" href="https://app.nomed.org/build/assets/app-BWX4fas7.css" /><script type="module" src="https://app.nomed.org/build/assets/app-C8fbWGuR.js"></script>    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const alertContainer = document.getElementById('alert-container');
-      if (alertContainer && !alertContainer.classList.contains('hidden')) {
-        // Oculta la alerta después de 1 segundo si está visible
-        setTimeout(() => {
-          alertContainer.classList.remove('opacity-100'); // Suaviza la opacidad
-          alertContainer.classList.add('opacity-0'); // Añade el desvanecimiento
-          setTimeout(() => {
-            alertContainer.classList.add('hidden'); // Esconde después de la animación
-          }, 500); // Tiempo de la animación
-        }, 1000);
-      }
-    });
-  </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
